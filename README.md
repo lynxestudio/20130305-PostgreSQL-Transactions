@@ -1,4 +1,4 @@
-#Entendiendo Transacciones con PostgreSQL.
+# Entendiendo Transacciones con PostgreSQL.
 
 <p align="justify">
 Hay operaciones en los sistemas de bases de datos (DBMS) que no pueden expresarse como una única operación SQL sino como el resultado de un conjunto de dos o más operaciones SQL, cuyo éxito depende de que cada una de esas operaciones se ejecute correctamente ya que si una de ellas falla se considera que toda la operación fallo.<br>
