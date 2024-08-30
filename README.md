@@ -22,41 +22,41 @@ Las transacciones en <b>PostgreSQL</b> utilizan las siguientes palabras reservad
 <div>Para poner en práctica estos comandos utilizaremos dos tablas relacionadas <i>Invoices</i> y <i>InvoiceDetails</i>.</div>
 </p>
 <div>
-<IMG src="picture_library/transac/tbinvoices.png">
+<IMG src="images/tbinvoices.png">
 </div><br>
 <p align="justify">
 Agregamos un par de registros, cada uno dentro de una transacción en el primer registro el commit (confirmación) se realiza de forma automática al terminar la transacción con el comando END.
 <div>
-<IMG src="picture_library/transac/transaction.png">
+<IMG src="images/transaction.png">
 </div><br>
 <div>
-<IMG src="picture_library/transac/fig1.png" width="777">
+<IMG src="images/fig1.png" width="777">
 </div>
 <div>En el segundo registro utilizamos el comando COMMIT de forma explicita para hacer los cambios permanentes.</div>
 <div>
-<IMG src="picture_library/transac/transaction2.png">
+<IMG src="images/transaction2.png">
 </div><br>
 <div>
-<IMG src="picture_library/transac/fig2.png" width="777">
+<IMG src="images/fig2.png" width="777">
 </div>
 <div>Ahora insertamos un nuevo registro y eliminamos un par pero en vez de confirmar la transacción con COMMIT deshacemos los cambios y regresamos los registros a su estado original, utilizando ROLLBACK.</div>
 <div>
-<IMG src="picture_library/transac/transaction3.png">
+<IMG src="images/transaction3.png">
 </div><br>
 <div>
-<IMG src="picture_library/transac/fig3.png" width="777">
+<IMG src="images/fig3.png" width="777">
 </div><br>
 <div>Aquí otro ejemplo del uso de ROLLBACK.</div><br>
 <div>
-<IMG src="picture_library/transac/fig4.png" width="777">
+<IMG src="images/fig4.png" width="777">
 </div><br>
 </p>
 <p align="justify">En el siguiente bloque de PL/SQL anónimo vamos a utilizar los comandos anteriores además del comando SAVEPOINT el cuál permite deshacer parcialmente los cambios hechos dentro de una transacción y no toda la transacción por completo.<br>
 Persistimos entonces solo los cambios antes del SAVEPOINT, los cambios realizados después serán revertidos por el comando ROLLBACK.<br>
 <div>
-<IMG src="picture_library/transac/transaction4.png">
+<IMG src="images/transaction4.png">
 </div><br>
 <div>
-<IMG src="picture_library/transac/fig5.png" width="777">
+<IMG src="images/fig5.png" width="777">
 </div><br>
 </p>
