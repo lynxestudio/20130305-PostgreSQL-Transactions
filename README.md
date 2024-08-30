@@ -31,11 +31,8 @@ Agregamos un par de registros, cada uno dentro de una transacción en el primer 
 </div>
 <div>En el segundo registro utilizamos el comando COMMIT de forma explicita para hacer los cambios permanentes.</div>
 <div>
-<IMG src="images/transaction2.png">
+<img src="images/fig3.png" width="1048" height="819" alt="">
 </div><br>
-<div>
-<IMG src="images/fig2.png" width="777">
-</div>
 <div>Ahora insertamos un nuevo registro y eliminamos un par pero en vez de confirmar la transacción con COMMIT deshacemos los cambios y regresamos los registros a su estado original, utilizando ROLLBACK.</div>
 <div>
 <IMG src="images/transaction3.png">
