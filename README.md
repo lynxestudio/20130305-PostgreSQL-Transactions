@@ -22,16 +22,20 @@ Las transacciones en <b>PostgreSQL</b> utilizan las siguientes palabras reservad
 <div>Para poner en práctica estos comandos utilizaremos dos tablas relacionadas <i>Invoices</i> y <i>InvoiceDetails</i>.</div>
 </p>
 <div>
-<img src="images/fig1.png" width="1048" height="819" alt="">
+<img src="images/fig0.png" width="1048" height="819" alt="">
 </div><br>
 <p align="justify">
 Agregamos un par de registros, cada uno dentro de una transacción en el primer registro el commit (confirmación) se realiza de forma automática al terminar la transacción con el comando END.
+</p>
 <div>
-<img src="images/fig2.png" width="1048" height="819" alt="">
+<img src="images/fig1.png" width="1048" height="819" alt="">
 </div>
 <p align="justify">
 En el segundo registro utilizamos el comando COMMIT de forma explicita para hacer los cambios permanentes.
 </p>
+<div>
+<img src="images/fig2.png" width="1048" height="819" alt="">
+</div><br>
 <p align="justify">
 Ahora insertamos un nuevo registro y eliminamos un par pero en vez de confirmar la transacción con COMMIT deshacemos los cambios y regresamos los registros a su estado original, utilizando ROLLBACK.
 </p>
@@ -45,4 +49,3 @@ Persistimos entonces solo los cambios antes del SAVEPOINT, los cambios realizado
 <div>
 <img src="images/fig4.png" width="1048" height="819" alt="">
 </div><br>
-</p>
