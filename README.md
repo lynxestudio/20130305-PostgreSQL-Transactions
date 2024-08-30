@@ -29,28 +29,23 @@ Agregamos un par de registros, cada uno dentro de una transacción en el primer 
 <div>
 <img src="images/fig2.png" width="1048" height="819" alt="">
 </div>
-<div>En el segundo registro utilizamos el comando COMMIT de forma explicita para hacer los cambios permanentes.</div>
+<p align="justify">
+En el segundo registro utilizamos el comando COMMIT de forma explicita para hacer los cambios permanentes.
+</p>
+<p align="justify">
+Ahora insertamos un nuevo registro y eliminamos un par pero en vez de confirmar la transacción con COMMIT deshacemos los cambios y regresamos los registros a su estado original, utilizando ROLLBACK.
+</p>
 <div>
 <img src="images/fig3.png" width="1048" height="819" alt="">
 </div><br>
-<div>Ahora insertamos un nuevo registro y eliminamos un par pero en vez de confirmar la transacción con COMMIT deshacemos los cambios y regresamos los registros a su estado original, utilizando ROLLBACK.</div>
+<p>Aquí otro ejemplo del uso de ROLLBACK.</p><br>
 <div>
-<IMG src="images/transaction3.png">
-</div><br>
-<div>
-<IMG src="images/fig3.png" width="777">
-</div><br>
-<div>Aquí otro ejemplo del uso de ROLLBACK.</div><br>
-<div>
-<IMG src="images/fig4.png" width="777">
+<img src="images/fig4.png" width="1048" height="819" alt="">
 </div><br>
 </p>
-<p align="justify">En el siguiente bloque de PL/SQL anónimo vamos a utilizar los comandos anteriores además del comando SAVEPOINT el cuál permite deshacer parcialmente los cambios hechos dentro de una transacción y no toda la transacción por completo.<br>
-Persistimos entonces solo los cambios antes del SAVEPOINT, los cambios realizados después serán revertidos por el comando ROLLBACK.<br>
-<div>
-<IMG src="images/transaction4.png">
-</div><br>
-<div>
-<IMG src="images/fig5.png" width="777">
-</div><br>
+<p align="justify">En el siguiente bloque de PL/SQL anónimo vamos a utilizar los comandos anteriores además del comando SAVEPOINT el cuál permite deshacer parcialmente los cambios hechos dentro de una transacción y no toda la transacción por completo.
+Persistimos entonces solo los cambios antes del SAVEPOINT, los cambios realizados después serán revertidos por el comando ROLLBACK.
 </p>
+<div>
+
+</div><br>
