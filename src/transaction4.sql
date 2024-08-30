@@ -1,5 +1,5 @@
 
-BEGIN
+BEGIN;
 
 Select count(invoice_id) from invoicedetails;
 
