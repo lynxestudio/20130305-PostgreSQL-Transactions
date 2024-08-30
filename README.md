@@ -38,14 +38,11 @@ Ahora insertamos un nuevo registro y eliminamos un par pero en vez de confirmar 
 <div>
 <img src="images/fig3.png" width="1048" height="819" alt="">
 </div><br>
-<p>Aquí otro ejemplo del uso de ROLLBACK.</p><br>
-<div>
-<img src="images/fig4.png" width="1048" height="819" alt="">
-</div><br>
-</p>
+<p>Aquí otro ejemplo del uso de ROLLBACK.</p>
 <p align="justify">En el siguiente bloque de PL/SQL anónimo vamos a utilizar los comandos anteriores además del comando SAVEPOINT el cuál permite deshacer parcialmente los cambios hechos dentro de una transacción y no toda la transacción por completo.
 Persistimos entonces solo los cambios antes del SAVEPOINT, los cambios realizados después serán revertidos por el comando ROLLBACK.
 </p>
 <div>
-
+<img src="images/fig4.png" width="1048" height="819" alt="">
 </div><br>
+</p>
