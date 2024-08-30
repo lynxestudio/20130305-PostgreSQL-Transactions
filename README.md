@@ -22,15 +22,12 @@ Las transacciones en <b>PostgreSQL</b> utilizan las siguientes palabras reservad
 <div>Para poner en práctica estos comandos utilizaremos dos tablas relacionadas <i>Invoices</i> y <i>InvoiceDetails</i>.</div>
 </p>
 <div>
-<IMG src="images/tbinvoices.png">
+<img src="images/fig1.png" width="1048" height="819" alt="">
 </div><br>
 <p align="justify">
 Agregamos un par de registros, cada uno dentro de una transacción en el primer registro el commit (confirmación) se realiza de forma automática al terminar la transacción con el comando END.
 <div>
-<IMG src="images/transaction.png">
-</div><br>
-<div>
-<IMG src="images/fig1.png" width="777">
+<img src="images/fig2.png" width="1048" height="819" alt="">
 </div>
 <div>En el segundo registro utilizamos el comando COMMIT de forma explicita para hacer los cambios permanentes.</div>
 <div>
